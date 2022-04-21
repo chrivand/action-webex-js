@@ -3,7 +3,7 @@ const core = require('@actions/core');
 const github = require('@actions/github');
 
 var ROOMID = process.env.ROOMID;
-var TOKEN = process.env.TOKEN;
+var TOKEN = 'Bearer ' + process.env.TOKEN;
 var MESSAGE = process.env.MESSAGE;
 
 axios
