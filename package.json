@@ -19,6 +19,7 @@
   "homepage": "https://github.com/chrivand/action-webex-js#readme",
   "dependencies": {
     "@actions/core": "^1.6.0",
-    "@actions/github": "^5.0.1"
+    "@actions/github": "^5.0.1",
+    "node-fetch": "^3.2.3"
   }
 }
