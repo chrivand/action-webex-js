@@ -1,18 +1,11 @@
 name: 'Webex: Post Message to Room - Javascript Action'
-description: 'Send Webex notifications from GitHub actions!'
-inputs:
-  TOKEN:  # id of input
-    description: 'Webex Access Token'
-    required: true
-    default: 'Provide secrets.TOKEN env value here'
-  ROOMID:  # id of input
-    description: 'Webex Room ID'
-    required: true
-    default: 'Provide secrets.ROOMID env value here'
-  MESSAGE:  # id of input
-    description: 'Markdown message'
-    required: true
-    default: '**Hello, world!**'
+description: 'Send Webex notifications from GitHub actions! Don't forget the environment variables TOKEN, ROOMID and MESSAGE'
+author: 'Christopher van der Made'
+
+branding:
+  icon: "bell"
+  color: "black"
+
 runs:
   using: 'node16'
   main: 'webex_action.js'

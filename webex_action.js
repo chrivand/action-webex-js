@@ -2,9 +2,9 @@ const axios = require('axios');
 const core = require('@actions/core');
 const github = require('@actions/github');
 
-var ROOMID = core.getInput('ROOMID');
-var TOKEN = core.getInput('TOKEN');
-var MESSAGE = core.getInput('MESSAGE');
+var ROOMID = process.env.ROOMID;
+var TOKEN = process.env.TOKEN;
+var MESSAGE = process.env.MESSAGE;
 
 var BODY = 'roomId=' + ROOMID + 'markdown=' + MESSAGE;
 
