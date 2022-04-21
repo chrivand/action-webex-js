@@ -6,9 +6,6 @@ var ROOMID = process.env.ROOMID;
 var TOKEN = process.env.TOKEN;
 var MESSAGE = process.env.MESSAGE;
 
-var BODY = 'roomId=' + ROOMID + 'markdown=' + MESSAGE;
-console.log(BODY)
-
 axios
   .post('https://webexapis.com/v1/messages/', {
     roomId: ROOMID,
