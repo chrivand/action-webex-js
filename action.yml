@@ -1,0 +1,17 @@
+name: 'Webex Javascript Action'
+description: 'Send notifications from GitHub actions!'
+inputs:
+  TOKEN:  # id of input
+    description: 'Webex Access Token'
+    required: true
+    default: '<use-repo-secrets>'
+  ROOMID:  # id of input
+    description: 'Webex Room ID'
+    required: true
+    default: '<use-repo-secrets>'
+  MESSAGE:  # id of input
+    description: 'Markdown message'
+    required: true
+    default: '**Hello, world!**'
+runs:
+  main: 'webex_action.js'
