@@ -1,0 +1,24 @@
+{
+  "name": "action-webex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webex_action.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrivand/action-webex-js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chrivand/action-webex-js/issues"
+  },
+  "homepage": "https://github.com/chrivand/action-webex-js#readme",
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "@actions/github": "^5.0.1"
+  }
+}
