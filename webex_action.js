@@ -7,7 +7,7 @@ var TOKEN = 'Bearer ' + process.env.TOKEN;
 var MESSAGE = process.env.MESSAGE;
 
 axios
-  .post('https://webexapis.com/v1/messages/', {
+  .post('https://webexapis.com/v1/messages', {
     roomId: ROOMID,
     markdown: MESSAGE
   }, {
