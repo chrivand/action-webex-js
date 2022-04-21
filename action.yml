@@ -1,13 +1,17 @@
-name: 'Hello World'
-description: 'Greet someone and record the time'
+name: 'Webex: Post Message to Room - Javascript Action'
+description: 'Send Webex notifications from GitHub actions!'
 inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
+  TOKEN:  # id of input
+    description: 'Webex Access Token'
     required: true
-    default: 'World'
-outputs:
-  time: # id of output
-    description: 'The time we greeted you'
+    default: ${{ secrets.TOKEN }}
+  ROOMID:  # id of input
+    description: 'Webex Room ID'
+    required: true
+    default: ${{ secrets.ROOMID }}
+  MESSAGE:  # id of input
+    description: 'Markdown message'
+    required: true
+    default: '**Hello, world!**'
 runs:
-  using: 'node16'
-  main: 'index.js'
+  main: 'webex_action.js'
