@@ -1,5 +1,5 @@
-name: 'Webex Javascript Action'
-description: 'Send notifications from GitHub actions!'
+name: 'Webex: Post Message to Room - Javascript Action'
+description: 'Send Webex notifications from GitHub actions!'
 inputs:
   TOKEN:  # id of input
     description: 'Webex Access Token'
