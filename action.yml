@@ -4,11 +4,11 @@ inputs:
   TOKEN:  # id of input
     description: 'Webex Access Token'
     required: true
-    default: '<use-repo-secrets>'
+    default: ${{ secrets.TOKEN }}
   ROOMID:  # id of input
     description: 'Webex Room ID'
     required: true
-    default: '<use-repo-secrets>'
+    default: ${{ secrets.ROOMID }}
   MESSAGE:  # id of input
     description: 'Markdown message'
     required: true
