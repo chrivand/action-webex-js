@@ -1,5 +1,5 @@
 name: 'Webex: Post Message to Room - Javascript Action'
-description: 'Send Webex notifications from GitHub actions! Don't forget the environment variables TOKEN, ROOMID and MESSAGE'
+description: 'Send Webex notifications from GitHub actions! Do not forget the environment variables TOKEN, ROOMID and MESSAGE'
 author: 'Christopher van der Made'
 
 branding:
