@@ -1,23 +1,26 @@
-import fetch from "node-fetch";
-
+const axios = require('axios');
 const core = require('@actions/core');
 const github = require('@actions/github');
 
-try {
+var ROOMID = core.getInput('ROOMID');
+var TOKEN = core.getInput('TOKEN');
+var MESSAGE = core.getInput('MESSAGE');
 
-    var ROOMID = core.getInput('ROOMID');
-    var TOKEN = core.getInput('TOKEN');
-    var MESSAGE = core.getInput('MESSAGE');
+var BODY = 'roomId=' + ROOMID + 'markdown=' + MESSAGE;
 
-    var BODY = 'roomId=' + ROOMID + 'markdown=' + MESSAGE;
-
-    fetch('https://webexapis.com/v1/messages/', {
-        method: 'POST',
-        headers: {
-            'Authorization': TOKEN,
-        },
-        body: BODY
-    });
-} catch (error) {
-    core.setFailed(error.message);
-}
+axios
+  .post('https://webexapis.com/v1/messages/', {
+    roomId: ROOMID,
+    markdown: MESSAGE
+  }, {
+      headers: { 
+          Authorization: TOKEN
+      }
+  })
+  .then(res => {
+    console.log(`statusCode: ${res.status}`)
+    console.log(res)
+  })
+  .catch(error => {
+    console.error(error)
+  })
