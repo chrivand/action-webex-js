@@ -14,4 +14,5 @@ inputs:
     required: true
     default: '**Hello, world!**'
 runs:
+  using: 'node16'
   main: 'webex_action.js'
