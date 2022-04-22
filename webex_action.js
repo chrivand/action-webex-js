@@ -2,9 +2,9 @@ const axios = require('axios');
 const core = require('@actions/core');
 const github = require('@actions/github');
 
-var ROOMID = process.env.ROOMID;
-var BEARER_TOKEN = 'Bearer ' + process.env.TOKEN;
-var MARKDOWN = process.env.MESSAGE;
+var ROOMID = process.env.WEBEX_ROOM_ID;
+var BEARER_TOKEN = 'Bearer ' + process.env.WEBEX_TOKEN;
+var MARKDOWN = process.env.MARKDOWN_MESSAGE;
 
 var DATA = JSON.stringify({
   "roomId": ROOMID,
