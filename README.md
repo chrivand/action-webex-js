@@ -2,7 +2,7 @@
 
 > **Note:** please test this well before using in production, this is a sample action!
 
-This action posts a message to a Webex room using the Webex API and a NodeJS GitHub action. 
+This **GitHub Action** posts a message to a **Webex Room** using the **Webex API** and a **NodeJS GitHub Action**. 
 
 ## Usage
 
