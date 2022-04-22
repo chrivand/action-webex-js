@@ -1,7 +1,7 @@
 ![License: CISCO](https://img.shields.io/badge/License-CISCO-blue.svg)
 [![published](https://static.production.devnetcloud.com/codeexchange/assets/images/devnet-published.svg)](https://developer.cisco.com/codeexchange/github/repo/chrivand/action-webex-js)
 
-# Webex: Post to Room GitHub Action
+# Webex: Post to Space (Room) GitHub Action
 
 > **Note:** please test this well before using in production, this is a sample action!
 
