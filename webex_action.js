@@ -6,7 +6,7 @@ var ROOMID = process.env.ROOMID;
 var BEARER_TOKEN = 'Bearer ' + process.env.TOKEN;
 var MARKDOWN = process.env.MESSAGE;
 
-var data = JSON.stringify({
+var DATA = JSON.stringify({
   "roomId": ROOMID,
   "markdown": MARKDOWN,
 });
@@ -16,9 +16,10 @@ var config = {
   url: 'https://webexapis.com/v1/messages',
   headers: { 
     'Authorization': BEARER_TOKEN, 
-    'Content-Type': 'application/json'
+    'Content-Type': 'application/json',
+    'Accept': 'application/json'
   },
-  data : data
+  data : DATA
 };
 
 axios(config)
