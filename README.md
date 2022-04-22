@@ -8,6 +8,8 @@ This action posts a message to a Webex room using the Webex API and a NodeJS Git
 
 1. Set the Webex Room ID (`ROOM_ID`) and Webex Access Token (`WEBEX_TOKEN`) as repository secrets in the repository that you want to run the action in. Please find more information regarding Webex Bots in the [Webex developer documentation](https://developer.webex.com/docs/bots).
 
+![](env_vars.png)
+
 > **Note:** make sure that the Webex Bot is added to that space, otherwise this will fail.
 
 2. Create a file called `webex_post_message.yml` with the following content in the `.github/workflows` directory of your repository from where you want to run the action:
