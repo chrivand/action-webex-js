@@ -9,11 +9,11 @@ This **GitHub Action** posts a message to a **Webex Room** using the **Webex API
 
 ## Usage
 
-1. Set the Webex Room ID (`ROOM_ID`) and Webex Access Token (`WEBEX_TOKEN`) as repository secrets in the repository that you want to run the action in. Please find more information regarding Webex Bots in the [Webex developer documentation](https://developer.webex.com/docs/bots).
-
-![](env_vars.png)
+1. Set the Webex Room ID (`ROOM_ID`) and Webex Access Token (`WEBEX_TOKEN`) as repository secrets in the repository that you want to run the action in. It is recommended to use a **Webex Bot** to create an **Access Token**. Please find more information regarding Webex Bots in the [Webex developer documentation](https://developer.webex.com/docs/bots).
 
 > **Note:** make sure that the Webex Bot is added to that space, otherwise this will fail.
+
+![](env_vars.png)
 
 2. Create a file called `webex_post_message.yml` with the following content in the `.github/workflows` directory of your repository from where you want to run the action:
 
