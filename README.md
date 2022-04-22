@@ -6,7 +6,7 @@ This action posts a message to a Webex room using the Webex API and a NodeJS Git
 
 ## Usage
 
-1. Set the Webex Room ID (`ROOM_ID`) and Webex Access Token (`WEBEX_TOKEN`) as repository secrets in the repository that you want to run the action in. 
+1. Set the Webex Room ID (`ROOM_ID`) and Webex Access Token (`WEBEX_TOKEN`) as repository secrets in the repository that you want to run the action in. Please find more information regarding Webex Bots in the [Webex developer documentation](https://developer.webex.com/docs/bots).
 
 > **Note:** make sure that the Webex Bot is added to that space, otherwise this will fail.
 
