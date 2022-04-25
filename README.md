@@ -36,7 +36,7 @@ jobs:
         env:
           WEBEX_TOKEN: ${{ secrets.WEBEX_TOKEN }}
           WEBEX_ROOM_ID: ${{ secrets.WEBEX_ROOM_ID }}
-          MARKDOWN_MESSAGE: '**Hello, world!**'
+          MARKDOWN_MESSAGE: "**Hello, world! You just ran an action from ${{ github.repository }}.**"
 ```          
 
-3. Adjust the `yml` file as needed, especially the `MARKDOWN_MESSAGE` environment variable. You can for example trigger a Webex notification based on certain output of other actions that you have run before.
+3. Adjust the `yml` file as needed, especially the `MARKDOWN_MESSAGE` environment variable. You can for example trigger a Webex notification based on certain output of other actions that you have run before. Please check the [GitHub documentation](https://docs.github.com/en/actions/learn-github-actions/contexts) for all context that you can use.
