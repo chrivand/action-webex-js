@@ -1,7 +1,7 @@
 ![License: CISCO](https://img.shields.io/badge/License-CISCO-blue.svg)
 [![published](https://static.production.devnetcloud.com/codeexchange/assets/images/devnet-published.svg)](https://developer.cisco.com/codeexchange/github/repo/chrivand/action-webex-js)
 
-# Webex: Post to Space (Room) GitHub Action
+# Cisco Webex: Post to Space (Room) GitHub Action
 
 > **Note:** please test this well before using in production, this is a sample action!
 
@@ -9,7 +9,7 @@ This **GitHub Action** posts a message to a **Webex Room** using the **Webex API
 
 ## Usage
 
-1. Set the Webex Room ID (`ROOM_ID`) and Webex Access Token (`WEBEX_TOKEN`) as repository secrets in the repository that you want to run the action in. It is recommended to use a **Webex Bot** to create an **Access Token**. Please find more information regarding Webex Bots in the [Webex developer documentation](https://developer.webex.com/docs/bots).
+1. Set the Webex Room ID (`WEBEX_ROOM_ID`) and Webex Access Token (`WEBEX_TOKEN`) as repository secrets in the repository that you want to run the action in. It is recommended to use a **Webex Bot** to create an **Access Token**. Please find more information regarding Webex Bots in the [Webex developer documentation](https://developer.webex.com/docs/bots).
 
 > **Note:** make sure that the Webex Bot is added to that space, otherwise this will fail.
 
